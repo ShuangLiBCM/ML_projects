@@ -12,5 +12,5 @@ setup(
     author_email='shuang.li@bcm.edu',
     url='https://github.com/ShuangLiBCM/learning_plasticity',
     packages=find_packages(exclude=[]),
-    install_requires=['numpy', 'tensorflow'],
+    install_requires=['numpy'],
 )

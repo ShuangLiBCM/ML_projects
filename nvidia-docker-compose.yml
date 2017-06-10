@@ -1,0 +1,41 @@
+services:
+  gpu_notebook0:
+    build:
+      context: .
+      dockerfile: Dockerfile_GPU
+    devices:
+    - /dev/nvidia0
+    - /dev/nvidiactl
+    - /dev/nvidia-uvm
+    env_file: .env
+    ports:
+    - 3000:8888
+    - 5000:6006
+    volumes:
+    - .:/src/learning_plasticity
+    - .:/notebooks
+    - ./archive:/tensorboard
+    - /mnt/lab/shuang_data:/data
+    - nvidia_driver_370.28:/usr/local/nvidia:ro
+  gpu_notebook1:
+    build:
+      context: .
+      dockerfile: Dockerfile_GPU
+    devices:
+    - /dev/nvidia1
+    - /dev/nvidiactl
+    - /dev/nvidia-uvm
+    env_file: .env
+    ports:
+    - 3001:8888
+    - 5001:6006
+    volumes:
+    - .:/src/learning_plasticity
+    - .:/notebooks
+    - ./archive:/tensorboard
+    - /mnt/lab/shuang_data:/data
+    - nvidia_driver_370.28:/usr/local/nvidia:ro
+version: '2'
+volumes:
+  nvidia_driver_370.28:
+    external: true

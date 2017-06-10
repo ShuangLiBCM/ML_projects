@@ -4,7 +4,7 @@ services:
   notebooks:
     build:
       context: .
-      dockerfile: Dockerfile
+      dockerfile: Dockerfile_runner
     # env_file: .env
     ports:
       - "8888:8888"
