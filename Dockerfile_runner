@@ -12,5 +12,3 @@ ADD . /src/learning_plasticity
 RUN pip3 install -e /src/learning_plasticity
 
 CMD ["python3", "/src/learning_plasticity/scripts/kernel_populate.py"]
-
-

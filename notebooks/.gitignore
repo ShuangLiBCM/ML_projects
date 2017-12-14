@@ -1,0 +1,5 @@
+# Ingore image files
+*.png
+
+# Ignore data files
+*.npy
