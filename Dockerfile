@@ -10,7 +10,6 @@ RUN pip3 install --upgrade https://github.com/ozgur/python-linkedin/tarball/mast
 RUN pip3 install Theano
 RUN pip3 install Keras
 RUN pip3 install pillow
-RUN pip3 install PIL
 
 ADD . /src
 RUN pip3 install -e /src
