@@ -12,7 +12,7 @@ services:
     - 3000:8888
     - 5000:6006
     volumes:
-    - .:/src/learning_plasticity
+    - .:/src/ML_projects
     - .:/notebooks
     - ./archive:/tensorboard
     - /mnt/lab/shuang_data:/data
@@ -30,7 +30,7 @@ services:
     - 3001:8888
     - 5001:6006
     volumes:
-    - .:/src/learning_plasticity
+    - .:/src/ML_projects
     - .:/notebooks
     - ./archive:/tensorboard
     - /mnt/lab/shuang_data:/data
