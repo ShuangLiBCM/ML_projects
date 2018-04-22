@@ -13,4 +13,4 @@ services:
     - .:/src/ML_projects
     - .:/notebooks
     - ./archive:/tensorboard
-    - /mnt/lab/shuang_data:/data
+    - /home/shuangli/Projects/dataset:/data
