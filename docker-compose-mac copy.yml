@@ -10,7 +10,7 @@ services:
       - "8888:8888"
       - "6006:6006"
     volumes:
-#    - .:/src/learning_plasticity/
+    - .:/src/ML_projects
     - .:/notebooks
     - ./archive:/tensorboard
-    # - /volumes/lab/shuang_data:/data
+    - /mnt/lab/shuang_data:/data
