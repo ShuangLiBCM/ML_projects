@@ -16,3 +16,4 @@ data/
 archive/
 *.pdf
 .csv
+docker-compose.yml
