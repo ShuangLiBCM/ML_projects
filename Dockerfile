@@ -11,6 +11,7 @@ RUN pip3 install Theano
 RUN pip3 install Keras
 RUN pip3 install pillow
 RUN pip3 install statsmodels
+RUN pip3 install plotly
 
 ADD . /src
 RUN pip3 install -e /src
